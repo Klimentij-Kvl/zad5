@@ -15,7 +15,7 @@ public:
     explicit figures(QWidget *parent = nullptr);
 
     figures(QString col);
-    figures(QString col, int fig);
+    figures(QString col, int fig, QPoint p);
 
     ~figures();
 
@@ -31,6 +31,7 @@ private:
     Ui::figures *ui;
     int figure;
     QString color;
+    int x, y;
 };
 
 #endif // FIGURES_H
